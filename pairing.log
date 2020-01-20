@@ -1,0 +1,183 @@
+[bluetooth]# power on
+Changing power on succeeded
+[bluetooth]# pairable on
+Changing pairable on succeeded
+[CHG] Controller 00:15:83:D2:06:79 Pairable: yes
+[bluetooth]# scan on
+Discovery started
+[CHG] Controller 00:15:83:D2:06:79 Discovering: yes
+[NEW] Device CB:40:11:0D:03:B5 Hue Lamp
+[CHG] Device C9:F0:78:3C:9E:CF RSSI: -54
+[CHG] Device C9:F0:78:3C:9E:CF TxPower: 10
+[NEW] Device D0:B5:C2:F7:FE:FB Comet Blue
+[NEW] Device 74:DA:EA:B8:09:F8 74-DA-EA-B8-09-F8
+[bluetooth]# scan off
+[CHG] Device 74:DA:EA:B8:09:F8 RSSI is nil
+[CHG] Device D0:B5:C2:F7:FE:FB TxPower is nil
+[CHG] Device D0:B5:C2:F7:FE:FB RSSI is nil
+[CHG] Device C9:F0:78:3C:9E:CF TxPower is nil
+[CHG] Device C9:F0:78:3C:9E:CF RSSI is nil
+[CHG] Device CB:40:11:0D:03:B5 TxPower is nil
+[CHG] Device CB:40:11:0D:03:B5 RSSI is nil
+Discovery stopped
+[CHG] Controller 00:15:83:D2:06:79 Discovering: no
+[bluetooth]# agent on
+Agent registered
+[bluetooth]# default-agent
+Default agent request successful
+[bluetooth]# pair CB:40:11:0D:03:B5
+Attempting to pair with CB:40:11:0D:03:B5
+[CHG] Device CB:40:11:0D:03:B5 Connected: yes
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: 00001800-0000-1000-8000-00805f9b34fb
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: 00001801-0000-1000-8000-00805f9b34fb
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: 0000180a-0000-1000-8000-00805f9b34fb
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: 0000fe0f-0000-1000-8000-00805f9b34fb
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: 932c32bd-0000-47a2-835a-a8d455b859dd
+[CHG] Device CB:40:11:0D:03:B5 UUIDs: b8843add-0000-4aa1-8794-c3f462030bda
+[CHG] Device CB:40:11:0D:03:B5 ServicesResolved: yes
+[CHG] Device CB:40:11:0D:03:B5 Paired: yes
+[NEW] Primary Service
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001
+        00001801-0000-1000-8000-00805f9b34fb
+        Generic Attribute Profile
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002
+        00002a05-0000-1000-8000-00805f9b34fb
+        Service Changed
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Primary Service
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a
+        0000180a-0000-1000-8000-00805f9b34fb
+        Device Information
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b
+        00002a29-0000-1000-8000-00805f9b34fb
+        Manufacturer Name String
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d
+        00002a24-0000-1000-8000-00805f9b34fb
+        Model Number String
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f
+        00002a28-0000-1000-8000-00805f9b34fb
+        Software Revision String
+[NEW] Primary Service
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011
+        0000fe0f-0000-1000-8000-00805f9b34fb
+        Unknown
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012
+        97fe6561-0001-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014
+        97fe6561-0003-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0016
+        97fe6561-0004-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018
+        97fe6561-0008-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b
+        97fe6561-2001-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001d
+        97fe6561-2002-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001f
+        97fe6561-2004-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0021
+        97fe6561-a001-4f62-86e9-b71ee2da3d22
+        Vendor specific
+[NEW] Primary Service
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023
+        932c32bd-0000-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024
+        932c32bd-0001-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
+        932c32bd-0002-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029
+        932c32bd-0003-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c
+        932c32bd-0004-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0032
+        932c32bd-0006-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034
+        932c32bd-0007-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037
+        932c32bd-1003-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039
+        932c32bd-1005-47a2-835a-a8d455b859dd
+        Vendor specific
+[NEW] Primary Service
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b
+        b8843add-0000-4aa1-8794-c3f462030bda
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c
+        b8843add-0001-4aa1-8794-c3f462030bda
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e
+        b8843add-0002-4aa1-8794-c3f462030bda
+        Vendor specific
+[NEW] Descriptor
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040
+        00002902-0000-1000-8000-00805f9b34fb
+        Client Characteristic Configuration
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0041
+        b8843add-0003-4aa1-8794-c3f462030bda
+        Vendor specific
+[NEW] Characteristic
+        /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043
+        b8843add-0004-4aa1-8794-c3f462030bda
+        Vendor specific
+Pairing successful
