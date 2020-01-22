@@ -12,6 +12,7 @@ We try to decode the Philips Hue Bluetooth protocol
   
 # first successful switch-off!
 
+```
   [bluetooth]# devices
   Device CB:40:11:0D:03:B5 Hue Lamp
   Device C9:F0:78:3C:9E:CF Hue Lamp
@@ -26,5 +27,6 @@ We try to decode the Philips Hue Bluetooth protocol
   [Hue Lamp:/service0023/char0026]# write 0
   Attempting to write /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
   [Hue Lamp:/service0023/char0026]# exit
+```
 
   
