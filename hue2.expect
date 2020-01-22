@@ -1,0 +1,245 @@
+#!/usr/bin/expect -f
+
+spawn "bluetoothctl"
+expect "#"
+#send "discoverable on\r"
+#expect "Changing discoverable on succeeded"
+#send "pairable on\r"
+#expect "Changing pairable on succeeded"
+#send "agent on\r"
+#expect "Agent registered"
+#send "default-agent\r"
+#expect "Default agent request successful"
+#
+#expect "agent"
+#expect "Confirm passkey"
+#send "yes\r"       ;# this shows up and if the connection with the computer isn't initialised, both top level expects timeout and this gets send.
+#interact #Just so that you can continue debugging afterwards
+
+#send "connect CB:40:11:0D:03:B5\r"
+send "connect C9:F0:78:3C:9E:CF\r"
+expect "Connection successful"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0001/char0002\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0001/char0002/desc0004\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service000a/char000b\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service000a/char000d\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service000a/char000f\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0012\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0014\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0016\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0018\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0018/desc001a\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char001b\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char001d\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char001f\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0011/char0021\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0024\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0026\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0026/desc0028\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0029\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0029/desc002b\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char002c\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char002c/desc002e\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0032\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0034\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0034/desc0036\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+#send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0037\r"
+#expect -re "^.*:.*#"
+#send "read\r"
+#expect -re "Attribute|Failed"
+#sleep 1
+#expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service0023/char0039\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service003b/char003c\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service003b/char003e\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service003b/char003e/desc0040\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service003b/char0041\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+send "select-attribute /org/bluez/hci0/dev_C9_F0_78_3C_9E_CF/service003b/char0043\r"
+expect -re "^.*:.*#"
+send "read\r"
+expect -re "Attribute|Failed"
+sleep 1
+expect  "^\[Hue Lamp"
+
+
+send "disconnect\r"
+expect "#"
+
+send "exit\r"
+expect "eof"
