@@ -11,6 +11,8 @@ We try to decode the Philips Hue Bluetooth protocol
   - Look into the log file of the Android app itself for useful messages: open
   
 # first successful switch-off!
+- works for software version 1.53.3-r27175
+- doesn't work for software version 1.55.8_r28815
 
 ```
   [bluetooth]# devices
