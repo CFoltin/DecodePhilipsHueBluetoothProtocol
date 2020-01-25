@@ -13,6 +13,7 @@ We try to decode the Philips Hue Bluetooth protocol
 # first successful switch-off!
 - works for software version 1.53.3-r27175
 - doesn't work for software version 1.55.8_r28815
+- belongs to the `UUID 932c32bd-0002-47a2-835a-a8d455b859dd`
 
 ```
   [bluetooth]# devices
