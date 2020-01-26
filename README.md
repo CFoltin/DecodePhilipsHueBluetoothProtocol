@@ -34,6 +34,8 @@ We try to decode the Philips Hue Bluetooth protocol
   
 - works for software version  1.65.7_hCDE64320
 
+- :!: The trick is, that the lamp must not be paired with a smart-phone. I've chosen to "reset" the device in the HUE app, then it got a new bluetooth-address and was not paired any longer. After this step, the things below worked out of the box :!:
+
 ```
 root@haendel:~# bluetoothctl 
 [NEW] Controller 00:15:83:D2:06:79 haendel [default]
