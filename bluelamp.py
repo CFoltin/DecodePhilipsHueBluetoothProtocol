@@ -41,7 +41,6 @@ status = "00"
 if args.switchOn:
     status = "01"
 
-# Get thermostat address from command parameters.
 bulb = args.device
 lock = FileLock('/tmp/bluetooth.lock')
 with lock:
