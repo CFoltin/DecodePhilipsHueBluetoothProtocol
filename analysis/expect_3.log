@@ -1,0 +1,533 @@
+spawn bluetoothctl
+Waiting to connect to bluetoothd...[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Controller 00:15:83:D2:06:79 haendel [default]
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device CB:40:11:0D:03:B5 Hue Lamp
+[0;94m[bluetooth][0m# [[0;92mNEW[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b
+	b8843add-0000-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043
+	b8843add-0004-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0041
+	b8843add-0003-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e
+	b8843add-0002-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c
+	b8843add-0001-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023
+	932c32bd-0000-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039
+	932c32bd-1005-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037
+	932c32bd-1003-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034
+	932c32bd-0007-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0032
+	932c32bd-0006-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c
+	932c32bd-0004-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029
+	932c32bd-0003-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
+	932c32bd-0002-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024
+	932c32bd-0001-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011
+	0000fe0f-0000-1000-8000-00805f9b34fb
+	Unknown
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0021
+	97fe6561-a001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001f
+	97fe6561-2004-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001d
+	97fe6561-2002-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b
+	97fe6561-2001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018
+	97fe6561-0008-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0016
+	97fe6561-0004-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014
+	97fe6561-0003-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012
+	97fe6561-0001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a
+	0000180a-0000-1000-8000-00805f9b34fb
+	Device Information
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f
+	00002a28-0000-1000-8000-00805f9b34fb
+	Software Revision String
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d
+	00002a24-0000-1000-8000-00805f9b34fb
+	Model Number String
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b
+	00002a29-0000-1000-8000-00805f9b34fb
+	Manufacturer Name String
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001
+	00001801-0000-1000-8000-00805f9b34fb
+	Generic Attribute Profile
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002
+	00002a05-0000-1000-8000-00805f9b34fb
+	Service Changed
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[Hue Lamp][0m# [K[[0;92mNEW[0m] Device C9:F0:78:3C:9E:CF Hue Lamp
+[0;94m[Hue Lamp][0m# connect CB:40:11:0D:03:B5
+Attempting to connect to CB:40:11:0D:03:B5
+[0;94m[Hue Lamp][0m# [KConnection successful
+[0;94m[Hue Lamp][0m# [0;94m[Hue Lamp][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002
+[0;94m[Hue Lamp:/service0001/char0002][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002
+[0;94m[Hue Lamp:/service0001/char0002][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0001/char0002][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004
+[0;94m[Hue Lamp:/service0001/char0002/desc0004][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004
+[0;94m[Hue Lamp:/service0001/char0002/desc0004][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004 Value: 0x02
+[0;94m[Hue Lamp:/service0001/char0002/desc0004][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004 Value: 0x00
+[0;94m[Hue Lamp:/service0001/char0002/desc0004][0m# [K  02 00                                            ..              
+[0;94m[Hue Lamp:/service0001/char0002/desc0004][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b
+[0;94m[Hue Lamp:/service000a/char000b][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x50
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x68
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x69
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x6c
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x69
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x70
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b Value: 0x73
+[0;94m[Hue Lamp:/service000a/char000b][0m# [K  50 68 69 6c 69 70 73                             Philips         
+[0;94m[Hue Lamp:/service000a/char000b][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d
+[0;94m[Hue Lamp:/service000a/char000d][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x4c
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x54
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x41
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x30
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x30
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d Value: 0x31
+[0;94m[Hue Lamp:/service000a/char000d][0m# [K  4c 54 41 30 30 31                                LTA001          
+[0;94m[Hue Lamp:/service000a/char000d][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f
+[0;94m[Hue Lamp:/service000a/char000f][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x31
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x2e
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x35
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x33
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x2e
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x33
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x5f
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x72
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x32
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x37
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x31
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x37
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f Value: 0x35
+[0;94m[Hue Lamp:/service000a/char000f][0m# [K  31 2e 35 33 2e 33 5f 72 32 37 31 37 35           1.53.3_r27175   
+[0;94m[Hue Lamp:/service000a/char000f][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012
+[0;94m[Hue Lamp:/service0011/char0012][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0xcd
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x30
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x2c
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x06
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x01
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x88
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x17
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012 Value: 0x00
+[0;94m[Hue Lamp:/service0011/char0012][0m# [K  cd 30 2c 06 01 88 17 00                          .0,.....        
+[0;94m[Hue Lamp:/service0011/char0012][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014
+[0;94m[Hue Lamp:/service0011/char0014][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x48
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x75
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x65
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x20
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x62
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x75
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x6c
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014 Value: 0x62
+[0;94m[Hue Lamp:/service0011/char0014][0m# [K  48 75 65 20 62 75 6c 62                          Hue bulb        
+[0;94m[Hue Lamp:/service0011/char0014][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0016
+[0;94m[Hue Lamp:/service0011/char0016][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0016
+[0;94m[Hue Lamp:/service0011/char0016][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0011/char0016][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018
+[0;94m[Hue Lamp:/service0011/char0018][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018
+[0;94m[Hue Lamp:/service0011/char0018][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0011/char0018][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a
+[0;94m[Hue Lamp:/service0011/char0018/desc001a][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a
+[0;94m[Hue Lamp:/service0011/char0018/desc001a][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a Value: 0x00
+[0;94m[Hue Lamp:/service0011/char0018/desc001a][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a Value: 0x00
+[0;94m[Hue Lamp:/service0011/char0018/desc001a][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service0011/char0018/desc001a][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b
+[0;94m[Hue Lamp:/service0011/char001b][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b
+[0;94m[Hue Lamp:/service0011/char001b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b Value: 0x0a
+[0;94m[Hue Lamp:/service0011/char001b][0m# [K  0a                                               .               
+[0;94m[Hue Lamp:/service0011/char001b][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001d
+[0;94m[Hue Lamp:/service0011/char001d][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001d
+[0;94m[Hue Lamp:/service0011/char001d][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0011/char001d][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001f
+[0;94m[Hue Lamp:/service0011/char001f][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001f
+[0;94m[Hue Lamp:/service0011/char001f][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0011/char001f][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0021
+[0;94m[Hue Lamp:/service0011/char0021][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0021
+[0;94m[Hue Lamp:/service0011/char0021][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0011/char0021][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024
+[0;94m[Hue Lamp:/service0023/char0024][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x99
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0xc6
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x03
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0024][0m# [K  00 01 02 01 02 99 00 02 02 c6 01 03 02 01 00     ............... 
+[0;94m[Hue Lamp:/service0023/char0024][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
+[0;94m[Hue Lamp:/service0023/char0026][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
+[0;94m[Hue Lamp:/service0023/char0026][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0026][0m# [K  01                                               .               
+[0;94m[Hue Lamp:/service0023/char0026][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028
+[0;94m[Hue Lamp:/service0023/char0026/desc0028][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028
+[0;94m[Hue Lamp:/service0023/char0026/desc0028][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0026/desc0028][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0026/desc0028][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service0023/char0026/desc0028][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029
+[0;94m[Hue Lamp:/service0023/char0029][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029
+[0;94m[Hue Lamp:/service0023/char0029][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029 Value: 0xfe
+[0;94m[Hue Lamp:/service0023/char0029][0m# [K  fe                                               .               
+[0;94m[Hue Lamp:/service0023/char0029][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b
+[0;94m[Hue Lamp:/service0023/char0029/desc002b][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b
+[0;94m[Hue Lamp:/service0023/char0029/desc002b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0029/desc002b][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0029/desc002b][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service0023/char0029/desc002b][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c
+[0;94m[Hue Lamp:/service0023/char002c][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c
+[0;94m[Hue Lamp:/service0023/char002c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c Value: 0x6e
+[0;94m[Hue Lamp:/service0023/char002c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c Value: 0x01
+[0;94m[Hue Lamp:/service0023/char002c][0m# [K  6e 01                                            n.              
+[0;94m[Hue Lamp:/service0023/char002c][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e
+[0;94m[Hue Lamp:/service0023/char002c/desc002e][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e
+[0;94m[Hue Lamp:/service0023/char002c/desc002e][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e Value: 0x00
+[0;94m[Hue Lamp:/service0023/char002c/desc002e][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e Value: 0x00
+[0;94m[Hue Lamp:/service0023/char002c/desc002e][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service0023/char002c/desc002e][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0032
+[0;94m[Hue Lamp:/service0023/char0032][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0032
+[0;94m[Hue Lamp:/service0023/char0032][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service0023/char0032][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034
+[0;94m[Hue Lamp:/service0023/char0034][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0xfe
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x03
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x6e
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0034][0m# [K  01 01 01 02 01 fe 03 02 6e 01                    ........n.      
+[0;94m[Hue Lamp:/service0023/char0034][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036
+[0;94m[Hue Lamp:/service0023/char0034/desc0036][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036
+[0;94m[Hue Lamp:/service0023/char0034/desc0036][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0034/desc0036][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0034/desc0036][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service0023/char0034/desc0036][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037
+[0;94m[Hue Lamp:/service0023/char0037][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037
+[0;94m[Hue Lamp:/service0023/char0037][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037 Value: 0x04
+[0;94m[Hue Lamp:/service0023/char0037][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037 Value: 0x00
+[0;94m[Hue Lamp:/service0023/char0037][0m# [K  04 00                                            ..              
+[0;94m[Hue Lamp:/service0023/char0037][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039
+[0;94m[Hue Lamp:/service0023/char0039][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0xfe
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x03
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x02
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x6e
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039 Value: 0x01
+[0;94m[Hue Lamp:/service0023/char0039][0m# [K  01 01 01 02 01 fe 03 02 6e 01                    ........n.      
+[0;94m[Hue Lamp:/service0023/char0039][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c
+[0;94m[Hue Lamp:/service003b/char003c][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0xff
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c Value: 0x00
+[0;94m[Hue Lamp:/service003b/char003c][0m# [K  ff ff ff ff ff ff ff ff ff 00                    ..........      
+[0;94m[Hue Lamp:/service003b/char003c][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e
+[0;94m[Hue Lamp:/service003b/char003e][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e
+[0;94m[Hue Lamp:/service003b/char003e][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service003b/char003e][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040
+[0;94m[Hue Lamp:/service003b/char003e/desc0040][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040
+[0;94m[Hue Lamp:/service003b/char003e/desc0040][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040 Value: 0x00
+[0;94m[Hue Lamp:/service003b/char003e/desc0040][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040 Value: 0x00
+[0;94m[Hue Lamp:/service003b/char003e/desc0040][0m# [K  00 00                                            ..              
+[0;94m[Hue Lamp:/service003b/char003e/desc0040][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0041
+[0;94m[Hue Lamp:/service003b/char0041][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0041
+[0;94m[Hue Lamp:/service003b/char0041][0m# [KFailed to read: org.bluez.Error.NotPermitted
+[0;94m[Hue Lamp:/service003b/char0041][0m# select-attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043
+[0;94m[Hue Lamp:/service003b/char0043][0m# read
+Attempting to read /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043
+[0;94m[Hue Lamp:/service003b/char0043][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043 Value: 0x01
+[0;94m[Hue Lamp:/service003b/char0043][0m# [K  01                                               .               
+[0;94m[Hue Lamp:/service003b/char0043][0m# disconnect
+Attempting to disconnect from CB:40:11:0D:03:B5
+[0;94m[Hue Lamp:/service003b/char0043][0m# exit
+[0;94m[Hue Lamp:/service003b/char0043][0m# [K[[0;91mDEL[0m] Controller 00:15:83:D2:06:79 haendel [default]
+[0;94m[Hue Lamp:/service003b/char0043][0m# [[0;91mDEL[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b
+	b8843add-0000-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0043
+	b8843add-0004-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char0041
+	b8843add-0003-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e
+	b8843add-0002-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003e/desc0040
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service003b/char003c
+	b8843add-0001-4aa1-8794-c3f462030bda
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023
+	932c32bd-0000-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0039
+	932c32bd-1005-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0037
+	932c32bd-1003-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034
+	932c32bd-0007-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0034/desc0036
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0032
+	932c32bd-0006-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c
+	932c32bd-0004-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char002c/desc002e
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029
+	932c32bd-0003-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0029/desc002b
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026
+	932c32bd-0002-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0026/desc0028
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0023/char0024
+	932c32bd-0001-47a2-835a-a8d455b859dd
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011
+	0000fe0f-0000-1000-8000-00805f9b34fb
+	Unknown
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0021
+	97fe6561-a001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001f
+	97fe6561-2004-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001d
+	97fe6561-2002-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char001b
+	97fe6561-2001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018
+	97fe6561-0008-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0018/desc001a
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0016
+	97fe6561-0004-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0014
+	97fe6561-0003-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0011/char0012
+	97fe6561-0001-4f62-86e9-b71ee2da3d22
+	Vendor specific
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a
+	0000180a-0000-1000-8000-00805f9b34fb
+	Device Information
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000f
+	00002a28-0000-1000-8000-00805f9b34fb
+	Software Revision String
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000d
+	00002a24-0000-1000-8000-00805f9b34fb
+	Model Number String
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service000a/char000b
+	00002a29-0000-1000-8000-00805f9b34fb
+	Manufacturer Name String
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Primary Service
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001
+	00001801-0000-1000-8000-00805f9b34fb
+	Generic Attribute Profile
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Characteristic
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002
+	00002a05-0000-1000-8000-00805f9b34fb
+	Service Changed
+[0;94m[bluetooth][0m# [K[[0;91mDEL[0m] Descriptor
+	/org/bluez/hci0/dev_CB_40_11_0D_03_B5/service0001/char0002/desc0004
+	00002902-0000-1000-8000-00805f9b34fb
+	Client Characteristic Configuration
+[0;94m[bluetooth][0m# Waiting to connect to bluetoothd...[K
