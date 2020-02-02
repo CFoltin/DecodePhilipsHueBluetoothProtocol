@@ -28,7 +28,7 @@ def getStatus(gatt, bulb, handle):
     gatt.sendline('char-read-hnd 0x00%s' % (handle))
     gatt.expect('Characteristic value/descriptor: (.*)')        
     all = gatt.match.group(1)
-    print "%s: Status: %s" % (bulb, all[0:2]) 
+    print ("%s: Status: %s" % (bulb, all[0:2]) )
 
 def writeValue(gatt, bulb, handle, status):
     getStatus(gatt, bulb, handle)
@@ -37,7 +37,7 @@ def writeValue(gatt, bulb, handle, status):
     if retValue == 0:
         getStatus(gatt, bulb, handle)
     else:
-        print "Device busy, sorry."
+        print ("Device busy, sorry.")
     
 def disconnect(gatt, bluectl):
     gatt.sendline('disconnect')
@@ -57,6 +57,8 @@ parser.add_argument('--device', dest='device', required=True,
                                         help='device mac address of the form XX:XX:XX:XX:XX')
 parser.add_argument('--color', dest='color', required=False,
                                         help='set a color in hex-form like "c601" (must be exactly 4 hex numbers). default is 6e01')
+parser.add_argument('--brightness', dest='brightness', required=False,
+                                        help='set the brightness in hex-form like "7f" (must be exactly 2 hex numbers). Full brightness corresponds to 0xfe')
 parser.add_argument('--verbose', dest='verbose',  action='store_true',
                                         help='Verbose output')
 
@@ -87,7 +89,7 @@ with lock:
     except:
         pass
     if retValue != 0:
-        print """
+        print ("""
 ERROR:
 ------
 Hue lamp doesn't seem to be paired. 
@@ -102,7 +104,7 @@ Hue lamp doesn't seem to be paired.
       pairable on
       pair <device>
       exit
-"""
+""")
         exit(1)
     
     # Run gatttool interactively.
@@ -133,6 +135,10 @@ Hue lamp doesn't seem to be paired.
     uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
     handle = getHandle(gatt, uuid)
     writeValue(gatt, bulb, handle, status)
+    if args.brightness:
+        uuid_brightness = "932c32bd-0003-47a2-835a-a8d455b859dd"
+        handle_brightness = getHandle(gatt, uuid_brightness)
+        writeValue(gatt, bulb, handle_brightness, args.brightness)
     if args.color:
         uuid_color = "932c32bd-0004-47a2-835a-a8d455b859dd"
         handle_color = getHandle(gatt, uuid_color)
