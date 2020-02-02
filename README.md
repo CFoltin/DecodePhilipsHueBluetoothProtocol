@@ -15,4 +15,5 @@ See [Analysis](https://github.com/CFoltin/DecodePhilipsHueBluetoothProtocol/wiki
 
 
 # first application for switching on/off
-See bluelamp.py
+See [bluelamp.py](https://github.com/CFoltin/DecodePhilipsHueBluetoothProtocol/blob/master/bluelamp.py)
+
