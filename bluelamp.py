@@ -47,7 +47,7 @@ def disconnect(gatt, bluectl):
     #bluectl.expect('.*Powered: no')
     bluectl.sendline('exit')
 
-parser = argparse.ArgumentParser(description='Control sygonix ht100bt modules..')
+parser = argparse.ArgumentParser(description='Control Philips Hue modules..')
 parser.add_argument('--switch-on', dest='switchOn', action='store_true')
 parser.add_argument('--switch-off', dest='switchOn', action='store_false')
 parser.set_defaults(switchOn=True)
