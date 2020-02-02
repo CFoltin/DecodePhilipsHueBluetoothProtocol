@@ -283,3 +283,6 @@ Attempting to read /org/bluez/hci0/dev_EF_03_B5_5F_1B_88/service000e/char0013
 [Hue Lamp:/service000e/char0013]# exit
 ...
 ```
+
+# first application for switching on/off
+See bluelamp.py
