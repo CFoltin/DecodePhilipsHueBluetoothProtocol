@@ -51,6 +51,8 @@ parser = argparse.ArgumentParser(description='Control sygonix ht100bt modules..'
 parser.add_argument('--switch-on', dest='switchOn', action='store_true')
 parser.add_argument('--switch-off', dest='switchOn', action='store_false')
 parser.set_defaults(switchOn=True)
+parser.add_argument('--ping', dest='ping', action='store_true')
+parser.set_defaults(ping=False)
 parser.add_argument('--device', dest='device', required=True,
                                         help='device mac address of the form XX:XX:XX:XX:XX')
 parser.add_argument('--color', dest='color', required=False,
@@ -121,6 +123,12 @@ Hue lamp doesn't seem to be paired.
     if retValue != 1:
         disconnect(gatt, bluectl)
         exit(1)
+    # only ping?
+    if args.ping:
+        print("Device %s successfully pinged" % (bulb))
+        disconnect(gatt, bluectl)
+        exit(0)
+        
     # determine handle for uuid
     uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
     handle = getHandle(gatt, uuid)
