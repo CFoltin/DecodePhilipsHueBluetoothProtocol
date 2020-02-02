@@ -18,12 +18,19 @@ import pexpect
 from lockfile import FileLock
 import argparse
 
-def getStatus(gatt, bulb):
-    gatt.sendline('char-read-hnd 0x0027')
+def getStatus(gatt, bulb, handle):
+    gatt.sendline('char-read-hnd 0x00%s' % (handle))
     gatt.expect('Characteristic value/descriptor: (.*)')        
     all = gatt.match.group(1)
     print "%s: Status: %s" % (bulb, all[0:2]) 
 
+def disconnect(gatt, bluectl):
+    gatt.sendline('disconnect')
+
+    bluectl.sendline('power off')
+    bluectl.expect('.*#')
+    #bluectl.expect('.*Powered: no')
+    bluectl.sendline('exit')
 
 parser = argparse.ArgumentParser(description='Control sygonix ht100bt modules..')
 parser.add_argument('--switch-on', dest='switchOn', action='store_true')
@@ -71,6 +78,8 @@ Hue lamp doesn't seem to be paired.
       scan on
       <wait to see the new address of the lamp>
       scan off
+      agent on
+      default-agent
       pairable on
       pair <device>
       exit
@@ -92,18 +101,22 @@ Hue lamp doesn't seem to be paired.
         if retValue != 1:
             time.sleep(1)
 
-    if retValue == 1:
-        getStatus(gatt, bulb)
-        gatt.sendline('char-write-req 0x0027 %s' % (status) )
-        retValue = gatt.expect(['Characteristic value was written successfully', 'Attribute can\'t be written'])
-        if retValue == 0:
-            getStatus(gatt, bulb)
-        else:
-            print "Device busy, sorry."
+    if retValue != 1:
+        disconnect(gatt, bluectl)
+        exit(1)
+    # determine handle for uuid
+    uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
+    gatt.sendline('char-read-uuid %s' % (uuid) )
+    gatt.expect('handle: 0x00(.*)\s+value:.*')
+    handle = gatt.match.group(1)
     
-    gatt.sendline('disconnect')
+    getStatus(gatt, bulb, handle)
+    gatt.sendline('char-write-req 0x00%s %s' % (handle, status) )
+    retValue = gatt.expect(['Characteristic value was written successfully', 'Attribute can\'t be written'])
+    if retValue == 0:
+        getStatus(gatt, bulb, handle)
+    else:
+        print "Device busy, sorry."
+
+    disconnect(gatt, bluectl)
     
-    bluectl.sendline('power off')
-    bluectl.expect('.*#')
-    #bluectl.expect('.*Powered: no')
-    bluectl.sendline('exit')
