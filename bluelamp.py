@@ -1,17 +1,15 @@
 #!/usr/bin/python
-# Smart Bulb Colorific! Control With Bluez
-# Author: Tony DiCola
 #
-# This script will cycle a Smart Bulb Colorific! Bluetooth Low Energy light bulb
-# through a rainbow of different hues.
+# script turns philips hue on/off via bluetooth.
+# author: christian foltin
+# adapted from: Tony DiCola
 #
 # Dependencies:
 # - You must install the pexpect library, typically with 'sudo pip install pexpect'.
-# - You must have bluez installed and gatttool in your path (copy it from the
-#   attrib directory after building bluez into the /usr/bin/ location).
+# - You must have bluez installed and gatttool in your path 
 #
 # License: Released under an MIT license: http://opensource.org/licenses/MIT
-import math
+
 import sys
 import time
 import os.path
