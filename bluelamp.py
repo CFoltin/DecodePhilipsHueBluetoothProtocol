@@ -18,12 +18,27 @@ import pexpect
 from lockfile import FileLock
 import argparse
 
+def getHandle(gatt, uuid):
+    gatt.sendline('char-read-uuid %s' % (uuid) )
+    gatt.expect('handle: 0x00(.*)\s+value:.*')
+    handle = gatt.match.group(1)
+    return handle
+
 def getStatus(gatt, bulb, handle):
     gatt.sendline('char-read-hnd 0x00%s' % (handle))
     gatt.expect('Characteristic value/descriptor: (.*)')        
     all = gatt.match.group(1)
     print "%s: Status: %s" % (bulb, all[0:2]) 
 
+def writeValue(gatt, bulb, handle, status):
+    getStatus(gatt, bulb, handle)
+    gatt.sendline('char-write-req 0x00%s %s' % (handle, status) )
+    retValue = gatt.expect(['Characteristic value was written successfully', 'Attribute can\'t be written'])
+    if retValue == 0:
+        getStatus(gatt, bulb, handle)
+    else:
+        print "Device busy, sorry."
+    
 def disconnect(gatt, bluectl):
     gatt.sendline('disconnect')
 
@@ -38,6 +53,8 @@ parser.add_argument('--switch-off', dest='switchOn', action='store_false')
 parser.set_defaults(switchOn=True)
 parser.add_argument('--device', dest='device', required=True,
                                         help='device mac address of the form XX:XX:XX:XX:XX')
+parser.add_argument('--color', dest='color', required=False,
+                                        help='set a color in hex-form like "c601" (must be exactly 4 hex numbers). default is 6e01')
 parser.add_argument('--verbose', dest='verbose',  action='store_true',
                                         help='Verbose output')
 
@@ -106,17 +123,12 @@ Hue lamp doesn't seem to be paired.
         exit(1)
     # determine handle for uuid
     uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
-    gatt.sendline('char-read-uuid %s' % (uuid) )
-    gatt.expect('handle: 0x00(.*)\s+value:.*')
-    handle = gatt.match.group(1)
-    
-    getStatus(gatt, bulb, handle)
-    gatt.sendline('char-write-req 0x00%s %s' % (handle, status) )
-    retValue = gatt.expect(['Characteristic value was written successfully', 'Attribute can\'t be written'])
-    if retValue == 0:
-        getStatus(gatt, bulb, handle)
-    else:
-        print "Device busy, sorry."
-
+    handle = getHandle(gatt, uuid)
+    writeValue(gatt, bulb, handle, status)
+    if args.color:
+        uuid_color = "932c32bd-0004-47a2-835a-a8d455b859dd"
+        handle_color = getHandle(gatt, uuid_color)
+        writeValue(gatt, bulb, handle_color, args.color)
+        
     disconnect(gatt, bluectl)
     
