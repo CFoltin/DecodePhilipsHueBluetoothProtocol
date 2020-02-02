@@ -54,6 +54,28 @@ with lock:
     bluectl.sendline('power on')
     bluectl.expect('Changing power on succeeded')
     bluectl.expect('Powered: yes')
+    bluectl.sendline('paired-devices')
+    retValue = -1
+    try:
+        retValue = bluectl.expect(['Device %s Hue Lamp' % (bulb)], timeout=5)
+    except:
+        pass
+    if retValue != 0:
+        print """
+ERROR:
+------
+Hue lamp doesn't seem to be paired. 
+    First, reset the device in the app (not only 'remove' it, but really reset to factory defaults). Then it gets a new bluetooth address.
+    Then, start bluetoothctl with the commands
+      power on
+      scan on
+      <wait to see the new address of the lamp>
+      scan off
+      pairable on
+      pair <device>
+      exit
+"""
+        exit(1)
     
     # Run gatttool interactively.
     gatt = pexpect.spawn('gatttool -t random -I -b %s' % bulb)
