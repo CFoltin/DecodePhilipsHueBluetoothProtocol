@@ -20,3 +20,5 @@ Works for the following firmware versions:
 *  apt install python-pexpect python-pip bluez
 *  apt-get remove python-filelock
 *  pip install lockfile
+*  git clone https://github.com/CFoltin/DecodePhilipsHueBluetoothProtocol.git
+*  ./DecodePhilipsHueBluetoothProtocol/bluelamp.py --device <MAC> --verbose --switch-on
