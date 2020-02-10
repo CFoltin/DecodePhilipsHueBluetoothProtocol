@@ -13,6 +13,7 @@
 import sys
 import time
 import os.path
+from datetime import datetime
 
 import pexpect
 from lockfile import FileLock
@@ -24,18 +25,18 @@ def getHandle(gatt, uuid):
     handle = gatt.match.group(1)
     return handle
 
-def getStatus(gatt, bulb, handle):
+def getStatus(gatt, bulb, handle, description):
     gatt.sendline('char-read-hnd 0x00%s' % (handle))
     gatt.expect('Characteristic value/descriptor: (.*)')        
     all = gatt.match.group(1)
-    print ("%s: Status: %s" % (bulb, all[0:2]) )
+    print ("%s (handle %s): Status: %s" % (description, bulb, all[0:2]) )
 
-def writeValue(gatt, bulb, handle, status):
-    getStatus(gatt, bulb, handle)
+def writeValue(gatt, bulb, handle, status, description):
+    getStatus(gatt, bulb, handle, description)
     gatt.sendline('char-write-req 0x00%s %s' % (handle, status) )
     retValue = gatt.expect(['Characteristic value was written successfully', 'Attribute can\'t be written'])
     if retValue == 0:
-        getStatus(gatt, bulb, handle)
+        getStatus(gatt, bulb, handle, description)
     else:
         print ("Device busy, sorry.")
     
@@ -62,6 +63,7 @@ parser.add_argument('--brightness', dest='brightness', required=False,
 parser.add_argument('--verbose', dest='verbose',  action='store_true',
                                         help='Verbose output')
 
+print(datetime.now())
 args = parser.parse_args()
 #args.verbose=True
 
@@ -101,6 +103,7 @@ Hue lamp doesn't seem to be paired.
       scan off
       agent on
       default-agent
+      discoverable on
       pairable on
       pair <device>
       exit
@@ -130,19 +133,25 @@ Hue lamp doesn't seem to be paired.
         print("Device %s successfully pinged" % (bulb))
         disconnect(gatt, bluectl)
         exit(0)
+
+    if args.verbose:
+        # read software version
+        uuid = "00002a28-0000-1000-8000-00805f9b34fb"
+        handle = getHandle(gatt, uuid)
+        getStatus(gatt, bulb, handle, "Software version")
         
-    # determine handle for uuid
-    uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
-    handle = getHandle(gatt, uuid)
-    writeValue(gatt, bulb, handle, status)
     if args.brightness:
         uuid_brightness = "932c32bd-0003-47a2-835a-a8d455b859dd"
         handle_brightness = getHandle(gatt, uuid_brightness)
-        writeValue(gatt, bulb, handle_brightness, args.brightness)
+        writeValue(gatt, bulb, handle_brightness, args.brightness, "Brightness")
     if args.color:
         uuid_color = "932c32bd-0004-47a2-835a-a8d455b859dd"
         handle_color = getHandle(gatt, uuid_color)
-        writeValue(gatt, bulb, handle_color, args.color)
+        writeValue(gatt, bulb, handle_color, args.color, "Color")
+    # determine handle for on-/off switch uuid
+    uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
+    handle = getHandle(gatt, uuid)
+    writeValue(gatt, bulb, handle, status, "On/Off-Status")
         
     disconnect(gatt, bluectl)
     
