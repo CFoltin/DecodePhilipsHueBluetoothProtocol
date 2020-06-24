@@ -62,6 +62,9 @@ parser.add_argument('--brightness', dest='brightness', required=False,
                                         help='set the brightness in hex-form like "7f" (must be exactly 2 hex numbers). Full brightness corresponds to 0xfe')
 parser.add_argument('--verbose', dest='verbose',  action='store_true',
                                         help='Verbose output')
+parser.add_argument('--retries', dest='retries', required=False,
+                                        help='Amount of retries')
+parser.set_defaults(retries=0)
 
 print(datetime.now())
 args = parser.parse_args()
@@ -73,25 +76,28 @@ if args.switchOn:
 
 bulb = args.device
 lock = FileLock('/tmp/bluetooth.lock')
+rounds = int(args.retries)
 with lock:
-            
-    bluectl = pexpect.spawn('bluetoothctl')
-    if args.verbose:
-        bluectl.logfile = sys.stdout
-    bluectl.sendline('power off')
-    bluectl.expect('Changing power off succeeded')
-    time.sleep(1)
-    bluectl.sendline('power on')
-    bluectl.expect('Changing power on succeeded')
-    bluectl.expect('Powered: yes')
-    bluectl.sendline('paired-devices')
-    retValue = -1
-    try:
-        retValue = bluectl.expect(['Device %s Hue Lamp' % (bulb)], timeout=5)
-    except:
-        pass
-    if retValue != 0:
-        print ("""
+    while rounds >= 0:
+        rounds = rounds - 1
+        try:
+            bluectl = pexpect.spawn('bluetoothctl')
+            if args.verbose:
+                bluectl.logfile = sys.stdout
+            bluectl.sendline('power off')
+            bluectl.expect('Changing power off succeeded')
+            time.sleep(1)
+            bluectl.sendline('power on')
+            bluectl.expect('Changing power on succeeded')
+            bluectl.expect('Powered: yes')
+            bluectl.sendline('paired-devices')
+            retValue = -1
+            try:
+                retValue = bluectl.expect(['Device %s Hue Lamp' % (bulb)], timeout=5)
+            except:
+                pass
+            if retValue != 0:
+                print ("""
 ERROR:
 ------
 Hue lamp doesn't seem to be paired. 
@@ -108,50 +114,52 @@ Hue lamp doesn't seem to be paired.
       pair <device>
       exit
 """)
-        exit(1)
-    
-    # Run gatttool interactively.
-    gatt = pexpect.spawn('gatttool -t random -I -b %s' % bulb)
-    if args.verbose:
-        gatt.logfile = sys.stdout
-    
-    # Connect to the device.
-    retries = 10
-    retValue = 0
-    while retries > 0 and retValue != 1:
-        gatt.sendline('connect')
-        retValue = gatt.expect(['Device or resource busy','Connection successful','Transport endpoint is not connected', 'connect error'])
-        retries-=1
-        if retValue != 1:
-            time.sleep(1)
-
-    if retValue != 1:
-        disconnect(gatt, bluectl)
-        exit(1)
-    # only ping?
-    if args.ping:
-        print("Device %s successfully pinged" % (bulb))
-        disconnect(gatt, bluectl)
-        exit(0)
-
-    if args.verbose:
-        # read software version
-        uuid = "00002a28-0000-1000-8000-00805f9b34fb"
-        handle = getHandle(gatt, uuid)
-        getStatus(gatt, bulb, handle, "Software version")
+                exit(1)
+            
+            # Run gatttool interactively.
+            gatt = pexpect.spawn('gatttool -t random -I -b %s' % bulb)
+            if args.verbose:
+                gatt.logfile = sys.stdout
+            
+            # Connect to the device.
+            retries = 10
+            retValue = 0
+            while retries > 0 and retValue != 1:
+                gatt.sendline('connect')
+                retValue = gatt.expect(['Device or resource busy','Connection successful','Transport endpoint is not connected', 'connect error'])
+                retries-=1
+                if retValue != 1:
+                    time.sleep(1)
         
-    if args.brightness:
-        uuid_brightness = "932c32bd-0003-47a2-835a-a8d455b859dd"
-        handle_brightness = getHandle(gatt, uuid_brightness)
-        writeValue(gatt, bulb, handle_brightness, args.brightness, "Brightness")
-    if args.color:
-        uuid_color = "932c32bd-0004-47a2-835a-a8d455b859dd"
-        handle_color = getHandle(gatt, uuid_color)
-        writeValue(gatt, bulb, handle_color, args.color, "Color")
-    # determine handle for on-/off switch uuid
-    uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
-    handle = getHandle(gatt, uuid)
-    writeValue(gatt, bulb, handle, status, "On/Off-Status")
+            if retValue != 1:
+                disconnect(gatt, bluectl)
+                exit(1)
+            # only ping?
+            if args.ping:
+                print("Device %s successfully pinged" % (bulb))
+                disconnect(gatt, bluectl)
+                exit(0)
         
-    disconnect(gatt, bluectl)
-    
+            if args.verbose:
+                # read software version
+                uuid = "00002a28-0000-1000-8000-00805f9b34fb"
+                handle = getHandle(gatt, uuid)
+                getStatus(gatt, bulb, handle, "Software version")
+                
+            if args.brightness:
+                uuid_brightness = "932c32bd-0003-47a2-835a-a8d455b859dd"
+                handle_brightness = getHandle(gatt, uuid_brightness)
+                writeValue(gatt, bulb, handle_brightness, args.brightness, "Brightness")
+            if args.color:
+                uuid_color = "932c32bd-0004-47a2-835a-a8d455b859dd"
+                handle_color = getHandle(gatt, uuid_color)
+                writeValue(gatt, bulb, handle_color, args.color, "Color")
+            # determine handle for on-/off switch uuid
+            uuid = "932c32bd-0002-47a2-835a-a8d455b859dd"
+            handle = getHandle(gatt, uuid)
+            writeValue(gatt, bulb, handle, status, "On/Off-Status")
+                
+            disconnect(gatt, bluectl)
+            break
+        except:
+            print("Exception.")
