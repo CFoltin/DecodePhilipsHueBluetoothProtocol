@@ -93,7 +93,7 @@ with lock:
             bluectl.sendline('paired-devices')
             retValue = -1
             try:
-                retValue = bluectl.expect(['Device %s Hue Lamp' % (bulb)], timeout=5)
+                retValue = bluectl.expect(['Device %s ' % (bulb)], timeout=5)
             except:
                 pass
             if retValue != 0:
