@@ -81,7 +81,7 @@ with lock:
     while rounds >= 0:
         rounds = rounds - 1
         try:
-            bluectl = pexpect.spawn('bluetoothctl')
+            bluectl = pexpect.spawn('bluetoothctl', encoding='utf-8')
             if args.verbose:
                 bluectl.logfile = sys.stdout
             bluectl.sendline('power off')
@@ -117,7 +117,7 @@ Hue lamp doesn't seem to be paired.
                 exit(1)
             
             # Run gatttool interactively.
-            gatt = pexpect.spawn('gatttool -t random -I -b %s' % bulb)
+            gatt = pexpect.spawn('gatttool -t random -I -b %s' % bulb, encoding='utf-8')
             if args.verbose:
                 gatt.logfile = sys.stdout
             
